@@ -86,10 +86,13 @@ theorem signInt_mul (u v : (ZMod n)ˣ) :
   simp [signInt]
 
 /-- Power compatibility, a useful reduction to a cyclic generator. -/
+
 @[simp]
 theorem signInt_pow (u : (ZMod n)ˣ) (k : ℕ) :
     signInt n (u ^ k) = signInt n u ^ k := by
-  simp [signInt]
+  change ((signHom n (u ^ k) : ℤˣ) : ℤ) =
+    ((signHom n u : ℤˣ) : ℤ) ^ k
+  rw [map_pow, Units.val_pow_eq_pow_val]
 
 /-- Taking the inverse of the multiplier does not change permutation sign. -/
 @[simp]
