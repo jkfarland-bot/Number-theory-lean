@@ -42,9 +42,10 @@ theorem sign_prodCongr (f : Equiv.Perm α) (g : Equiv.Perm β) :
   classical
   have hfactor : (f.prodCongr g : Equiv.Perm (α × β)) =
       (Equiv.prodCongrLeft (fun _ : β => f)) *
-        (Equiv.prodCongrRight (fun _ : α => g)) := by
-    ext ⟨a, b⟩
-    simp [Equiv.Perm.mul_apply]
+        (Equiv.prodCongrRight (fun _ : α => g)) := by  
+    apply Equiv.ext
+    rintro ⟨a, b⟩
+    rfl
   rw [hfactor, Equiv.Perm.sign_mul,
     Equiv.Perm.sign_prodCongrLeft,
     Equiv.Perm.sign_prodCongrRight]
