@@ -1,2 +1,3 @@
 import NumberTheoryLean.ProductSign
+import NumberTheoryLean.OddAffineSign
 import NumberTheoryLean.Zolotarev
