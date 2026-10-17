@@ -1,1 +1,1 @@
-import NumberTheoryLean.Zolotarev
+import Zolotarev
