@@ -1,4 +1,4 @@
 import NumberTheoryLean.ProductSign
 import NumberTheoryLean.OddAffineSign
 import NumberTheoryLean.Zolotarev
-import NumberTheoryLean.PrimeBridge
+import NumberTheoryLean.PrimeBridge_fixed_v2
