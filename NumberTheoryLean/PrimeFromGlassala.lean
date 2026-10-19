@@ -8,7 +8,7 @@ Please retain the original author's copyright header when copying source.
 
 Candidate Lean proof. Verify with the pinned toolchain before relying on it.
 -/
-import NumberTheoryLean.PrimeBridge
+import NumberTheoryLean.PrimeBridge_fixed_v2
 import NumberTheoryLean.GlassalaPrime
 import Mathlib.NumberTheory.LegendreSymbol.JacobiSymbol
 
