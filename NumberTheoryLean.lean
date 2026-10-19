@@ -5,3 +5,4 @@ import NumberTheoryLean.PrimeBridge_fixed_v2
 import NumberTheoryLean.CarryDigits
 import NumberTheoryLean.AffineTransport
 import NumberTheoryLean.DigitConjugacy
+import NumberTheoryLean.GlassalaPrime
