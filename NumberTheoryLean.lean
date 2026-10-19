@@ -6,3 +6,4 @@ import NumberTheoryLean.CarryDigits
 import NumberTheoryLean.AffineTransport
 import NumberTheoryLean.DigitConjugacy
 import NumberTheoryLean.GlassalaPrime
+import NumberTheoryLean.PrimeFromGlassala
