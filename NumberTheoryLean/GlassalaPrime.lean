@@ -68,7 +68,6 @@ lemma sign_eq_neg_pow_card (hp : Odd p) (ha : a ≠ 1) :
       units_order_totient
     rw [sign_of_cycleType, this, pow_add]
     simp only [Even.neg_pow (Nat.Odd.sub_odd hp odd_one), one_pow, one_mul]
-    rfl
 lemma ne_one_not_fixed (x : (ZMod p)ˣ) (ha : a ≠ 1) : (toPerm a) x ≠ x := by
   simp_all
 lemma cycle_support_eq_cycle_finset (x : (ZMod p)ˣ) (ha : a ≠ 1) :
