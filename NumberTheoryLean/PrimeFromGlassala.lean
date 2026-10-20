@@ -29,7 +29,7 @@ variable {p : ℕ} [Fact p.Prime] [NeZero p]
 private theorem signs_eq_of_cast_eq (hp : Odd p)
     (s t : ℤ) (hs : s = 1 ∨ s = -1) (ht : t = 1 ∨ t = -1)
     (he : (s : ZMod p) = (t : ZMod p)) : s = t := by
-  have hneq : (1 : ZMod p) ≠ -1 := ne_neg_self hp one_ne_zero
+  have hneq : (1 : ZMod p) ≠ -1 := ZMod.ne_neg_self hp one_ne_zero
   rcases hs with rfl | rfl <;> rcases ht with rfl | rfl
   · rfl
   · exact (hneq (by simpa using he)).elim
@@ -65,7 +65,7 @@ theorem zolotarev_prime (hp : Odd p) (u : (ZMod p)ˣ) :
     signs_eq_of_cast_eq hp _ _ hsign hleg hcast.symm
   exact hmain.trans (by
     simpa [jacobiOfUnit, a] using
-      (legendreSym.to_jacobiSym p a))
+       (jacobiSym.legendreSym.to_jacobiSym p a)
 
 end PrimeResult
 end Zolotarev
