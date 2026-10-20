@@ -30,6 +30,17 @@ example :
     jacobiOfUnit 5 (ZMod.unitOfCoprime 2 (by decide)) = jacobiSym 2 5 := by
   exact jacobiOfUnit_unitOfCoprime 5 2 (by decide)
 
+
+/-- Test the general theorem for modulus 45 = 3² × 5. -/
+example (u : (ZMod 45)ˣ) :
+    signInt 45 u = jacobiOfUnit 45 u := by
+  exact zolotarev_unit 45 (by decide) u
+
+/-- Test the general theorem for modulus 225 = 3² × 5². -/
+example (u : (ZMod 225)ˣ) :
+    signInt 225 u = jacobiOfUnit 225 u := by
+  exact zolotarev_unit 225 (by decide) u
+
 example (u : (ZMod 1)ˣ) :
     signInt 1 u = jacobiOfUnit 1 u := by
   exact zolotarev_mod_one u
