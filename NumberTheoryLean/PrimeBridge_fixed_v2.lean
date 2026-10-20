@@ -4,7 +4,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 
 Candidate Lean proof. Verify by building with Lean 4.33.1 and Mathlib v4.33.1.
 -/
-import NumberTheoryLean.Zolotarev
+import NumberTheoryLean.ZolotarevCore
 import Mathlib.Algebra.Field.ZMod
 import Mathlib.Algebra.GroupWithZero.Units.Basic
 import Mathlib.GroupTheory.Perm.Sign
