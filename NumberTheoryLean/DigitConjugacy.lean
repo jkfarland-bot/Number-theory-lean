@@ -7,7 +7,7 @@ NOT YET COMPILED. The existing general Zolotarev theorem still contains `sorry`.
 -/
 import NumberTheoryLean.CarryDigits
 import NumberTheoryLean.AffineTransport
-import NumberTheoryLean.Zolotarev
+import NumberTheoryLean.ZolotarevCore
 import Mathlib.Tactic
 
 /-!
