@@ -11,3 +11,5 @@ import NumberTheoryLean.FinalInduction
 
 #print axioms Zolotarev.zolotarev_prime
 #print axioms Zolotarev.sign_mul_modulus
+#print axioms Zolotarev.zolotarev_unit
+#print axioms Zolotarev.zolotarev_nat
