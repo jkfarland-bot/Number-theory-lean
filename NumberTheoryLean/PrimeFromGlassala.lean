@@ -65,7 +65,6 @@ theorem zolotarev_prime (hp : Odd p) (u : (ZMod p)ˣ) :
     signs_eq_of_cast_eq hp _ _ hsign hleg hcast.symm
   exact hmain.trans (by
     simpa [jacobiOfUnit, a] using
-       (jacobiSym.legendreSym.to_jacobiSym p a)
-
+      (jacobiSym.legendreSym.to_jacobiSym p a))
 end PrimeResult
 end Zolotarev
