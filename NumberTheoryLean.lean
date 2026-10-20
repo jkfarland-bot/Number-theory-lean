@@ -7,6 +7,7 @@ import NumberTheoryLean.AffineTransport
 import NumberTheoryLean.DigitConjugacy
 import NumberTheoryLean.GlassalaPrime
 import NumberTheoryLean.PrimeFromGlassala
+import NumberTheoryLean.FinalInduction
+
 #print axioms Zolotarev.zolotarev_prime
 #print axioms Zolotarev.sign_mul_modulus
-import NumberTheoryLean.FinalInduction
