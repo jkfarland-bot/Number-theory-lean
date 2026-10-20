@@ -1,4 +1,4 @@
-import Mathlib.NumberTheory.LegendreSymbol.Zolotarev
+import NumberTheoryLean.Zolotarev
 
 /-!
 # Lean smoke tests for the infrastructure (not a proof of the general theorem)
