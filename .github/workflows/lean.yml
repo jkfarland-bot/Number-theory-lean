@@ -29,10 +29,6 @@ jobs:
       - name: Build Zolotarev project
         run: lake build NumberTheoryLean
 
-        
-      - name: Build Zolotarev project
-        run: lake build NumberTheoryLean
-
       - name: Compile infrastructure tests
         run: lake env lean tests/Infrastructure.lean
 
